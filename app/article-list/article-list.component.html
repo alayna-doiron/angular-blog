@@ -1,0 +1,16 @@
+<h1>Our Posts</h1>
+<table>
+
+</table>
+
+<table>
+	<tr>
+		<th>Article Title</th>
+		<th>Date Published</th>
+	</tr>
+
+	<tr *ngFor="let article of articles" routerLink="/articles/{{article._id}}">
+		<td>{{articles.title}}</td>
+		<td>{{articles.date}}</td>
+	</tr>
+</table>
